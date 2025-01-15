@@ -1,0 +1,130 @@
+.technologies{
+    background-color: #f7f9fb !important;
+    margin-top: -4rem;
+}
+.technologies .heading{
+    margin-top: 4rem;
+}
+.technologies .icons{
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap:6%;
+    padding-bottom: 5rem;
+    animation-name: kd-fadeInUp;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+}
+.technologies .icon1,.icon2,.icon3,.icon4,.icon5,.icon6{
+    width: 80px;
+    height: 80px;
+    /* border: 1px solid black; */
+    background-image: url('css-sprites.png');
+    animation-name: kd-fadeInUp;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+}
+.technologies .icon1{
+    background-position: -112px -282px;
+    transition-duration: 0.3s;
+}
+.technologies .icon2{
+    background-position: -169px -388px;
+    transition-duration: 0.3s;
+}
+
+.technologies .icon3{
+    background-position: -283px -280px;
+    transition-duration: 0.3s;
+}
+.technologies .icon4{
+    background-position: -389px -255px;
+    transition-duration: 0.3s;
+}
+.technologies .icon5{
+    background-position: -196px -280px;
+    transition-duration: 0.3s;
+
+}
+.technologies .icon6{
+    background-position: -2px -391px;
+    transition-duration: 0.3s;
+}
+
+.icon1:hover,.icon2:hover,.icon3:hover,.icon4:hover,.icon5:hover,.icon6:hover{
+    /* border:1px solid black; */
+    margin-top: 10px;
+    margin-bottom: -10px;
+    cursor: pointer;
+    /* padding-bottom: -10rem;  */
+}
+.technologies .icons .text{
+    /* width: 100%; */
+    height: 150px;
+    /* border: 1px solid black; */
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.icons .text p{
+    margin-top:30px
+}
+
+
+.our-policy{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.policy{
+    font-family:'inherit';
+    font-size: 18px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    line-height: 40px;
+}
+.policy p{
+    font-family: inherit;
+    margin-top:-4rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+@keyframes kd-fadeInUp{
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,100px,0);
+        transform: translate3d(0,100px,0);
+      }
+      100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+    }
+    
+    @media (max-width:780px) {
+        .technologies .icons{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        }
+
+@media (max-width:980px)
+{
+    .policy{
+        width: 90%;
+    }
+
+}

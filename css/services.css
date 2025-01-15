@@ -1,0 +1,233 @@
+.services-section{
+    background-color:#f7f9fb !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+ .heading{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.heading h1{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 34px;
+    line-height: 1.3;
+    letter-spacing: -.03em;
+    font-weight: 400;
+}
+.heading hr{
+    width: 50px;
+    color: #004b97;
+    margin-bottom: 6rem;
+}
+
+.services-section .services{
+    width: 485px;
+    height: 485px;
+    background: url('codetrade-with-logo-12.png');
+}
+
+.service-card1,.service-card2,.service-card3{
+
+    margin-left: -80%;
+    width: 1250px;
+    height: 100px;
+    /* border: 1px solid black; */
+    /* align-items: center; */
+    display: flex;
+    margin-top:-30px ;
+    gap: 280px
+}
+.service-card2{
+    
+    margin-left: -100%;
+    margin-top: 120px;
+    width: 1450px;
+    gap: 450px
+}
+.service-card2 .box5,.service-card2 .box6{
+    width: 20%;
+}
+.service-card3 .box3,.service-card3 .box4{
+    width: 20%;
+}
+.service-card1 .box1,.service-card1 .box2{
+    width: 20%;
+}
+.service-card3{
+    margin-top:120px ;
+
+}
+.service-card1 .box1,.service-card1 .box2,.service-card3 .box3,.service-card3 .box4,.service-card2 .box5,.service-card2 .box6{
+    border: 1px solid #004b97;
+    border-radius: 50%;
+    height: 100px;
+    background-color:#f7f9fb !important; ;
+    background-image: url('css-sprites.png');
+}
+.left .data .box-a{
+    display: none;
+}
+.left,.right{
+    /* background-color: rgba(228, 228, 228, 0.281);; */
+    gap:20px;
+    display: flex;
+    width: 50%;
+       /* border:1px solid black; */
+}
+.left:hover,.right:hover{
+    cursor: pointer;
+}
+.service-card1 .data,.service-card2 .data ,.service-card3 .data{
+    /* border: 2px solid black; */
+    width: 80%;
+}
+.right p{
+    text-align: start;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    display: flex;
+    font-weight: 400;
+    line-height: 1.6;
+    color:#333;;
+}
+.left p{
+    color: #333;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    text-align: right;
+    display: flex;
+    /* font-weight: 350; */
+}
+.service-card1 .box1{
+    background-size: 1095px 983px;
+    background-position: -382px -136px;
+}
+.service-card1 .box2{
+    background-size: 1095px 983px;
+    background-position: -78px -336px;
+}
+.service-card2 .box5{
+    background-size: 1023px 933px;
+    background-position: 672px 14px;
+}
+.service-card2 .box6{
+    background-size: 1030px 987px;
+    background-position:676px -64px;
+}
+.service-card3 .box4{
+    background-size: 1023px 933px;
+    background-position:796px -315px; 
+}
+.service-card3 .box3{
+    background-size: 1249px 1160px;
+    background-position:899px 153px; 
+}
+.service-card1 .box1:hover{
+    background-size: 1167px 1233px;
+  background-position: -306px -12px;
+}
+.service-card1 .box2:hover{
+    background-size: 1300px 1209px;
+    background-position: -346px -132px;
+}
+.service-card2 .box5:hover{
+    background-size: 1347px 1289px;
+  background-position: 1324px -212px;
+}
+.service-card2 .box6:hover{
+    background-size: 1227px 1237px;
+    background-position: 1089px -204px;
+  
+}
+.service-card3 .box3:hover{
+    background-size: 1249px 1234px;
+  background-position: 1042px -12px;
+  
+}
+.service-card3 .box4:hover{
+    background-size: 1238px 1217px;
+    background-position: 1222px -322px;
+  
+}
+
+
+
+.services-section button{
+    font-family:  'Open Sans';
+    font-size: 16px;
+    font-weight: 700;
+    background-color:#004b97;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    height: 50px;
+    line-height: 1;
+    width: 150px;
+    cursor: pointer;
+}
+.services-section button:hover{
+    transition-duration: 0.5s;
+    border: 2px solid #004b97;
+    background-color: white;
+    color:#004b97;
+}
+
+
+@media (max-width:1270px) {
+    #serv .services{
+        background-image: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .service-card1,.service-card2,.service-card3{
+    width: 70%;
+    margin-left: 0%;
+    gap:8%
+    }
+}
+@media (max-width:810px){
+    .service-card1 .box1 ,.service-card1 .box2,.service-card2 .box5,.service-card2 .box6,.service-card3 .box3,.service-card3 .box4{
+        display: none;
+    }
+    .services{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+    }
+    .left ,.right{
+        width: 100%;
+    }
+    .left{
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .service-card1,.service-card2,.service-card3{
+        margin-bottom: 5%;
+    }
+    .left p,.right p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .services-section button{
+        margin-top: 35%;
+    }
+    .service-card1,.service-card2,.service-card3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}

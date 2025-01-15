@@ -1,0 +1,51 @@
+
+.hire-developer{
+    background-image: url('home-hero-dark.jpg');
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-position: 0px -250px;
+}
+.hire-developer .heading{
+    color:white;
+}
+.hire-developer .text{
+    width: 43%;
+}
+.hire-developer p{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.6;
+   
+
+}
+.hire-developer button{
+    background: transparent;
+    font-family: 'inherit';
+    width: 10rem;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    color:white;
+    margin-top: 2%;
+    border-radius: 5px;
+    border:2px solid white;
+    margin-bottom: 4rem;
+    transition-duration: .4s;
+}
+.hire-developer button:hover{
+    color:#004b97;
+    background-color: white;
+    cursor: pointer;
+}
+@media (max-width:980px)
+{
+    .hire-developer .text{
+        width: 70%;
+    }
+
+}
