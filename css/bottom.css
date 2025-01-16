@@ -89,7 +89,10 @@
         
     }
     .bottom-bar .data .left{
-        margin-right: -33%;
+        width: 100%;
+        flex-direction: row;
+        /* margin-right: -33%; */
+        display: flex;
         margin-bottom: 2%;
         margin-top: 2%;
     }

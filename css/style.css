@@ -18,7 +18,7 @@
     height: 8px;
     animation: line-bounce 3s ;
   }
-  #hero-section,.additional-content,#serv,#proc,#expert,#techniq,#poly,#hire,.last-section,.bottom-bar{
+  #main-nav,#main-nav.scrolled, #hero-section,.additional-content,#serv,#proc,#expert,#techniq,#poly,#hire,.last-section,.bottom-bar{
     /* display: none; */
     /* height: 0%; */
     animation:line-bounces 3s;
@@ -113,8 +113,11 @@
 #main-nav .menu-bar a:hover{
     color:white
 }
-#main-nav .menu-bar .bar i{
-    display: none;
+#main-nav .bar i{
+    font-size: 0px;
+}
+#main-nav .bar i .menu-bar i{
+    font-size: 16px;
 }
 .content{
     padding-top: 30vh;
@@ -418,24 +421,129 @@
     }
 }
 
+.bar i{
+    display: none;
+}
 
 
+.bar .block{
+    width: 205%;
+    margin-left:-103% ;
+    
+    border: 3px solid white;
+    background-color: white;
+    display: none;
+    
+}
+.accordion {
+    position:relative;
+    margin-top: -10%;
+    position: relative;
+    height: 100%;
+    background-color:white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    block-size: 0;
+  }
+  .panel p,.panel a{
 
+    margin-left: 15px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 3;
+    text-align: start;
+    cursor: pointer;
+  }
+  .bar a{
+    color:black;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    margin-right: 82%;
+    text-decoration: none;
+    margin-bottom: 30px;
+    line-height: 3;
+    font-weight: 400;
+  }
+  .panel h3{
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 16px;
+    color:#004b97;
+    text-align: start;
+  }
+  .panel h2{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    text-align: start;
+  }
+  .panel p:hover{
+    color:#004b97
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color:white;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
 
 @media (max-width:980px){
     .menu-bar a{
         display: none;
         /* gap:100% */
     }
-    #main-nav .menu-bar .bar i{
+    #main-nav .bar i{
         display: block;
+        transition:none;
         color:white;
         font-size: 35px;
         /* margin-left: 900%; */
     }
+    .bar i:hover{
+        cursor:pointer;
+    }
+    #main-nav .bar i:hover .block{
+        display: block;
+        margin-top: 250px;
+    }
+    #main-nav {
+        transition: none;
+        transition-duration: 0s;
+      }
+      #main-nav.scrolled {
+        transition: none;
+        transition-duration: 0s;
+      }
+      #main-nav .bar{
+        width: 100%;
+        /* border:5px solid white; */
+        text-align: right;
+        margin-right: 2%;
+    
+      }
+    #main-nav .bar i{
+        color:white;
+        font-size: 30px;
+    }
     #main-nav.scrolled .bar i{
         color: black;
+        transition:none;
     }
+    
+  
     .hero .content{
         justify-content: center;
         align-items: center;
@@ -499,9 +607,7 @@
     margin-top: 0;
     /* margin-left: 1%; */
     }
-    .card-section .card-a{
-        /* margin-left: 1.5%; */
-    }
+   
     
     .additional-content .card-section{
     
@@ -525,7 +631,7 @@
 
 }
 
-@media (max-width:810px){
+@media (max-width:810px) {
     .hero .card-section{
         display: flex;
         flex-direction: column;
@@ -548,6 +654,13 @@
         margin-left: 5%;
       
     }
+    .data button:hover{
+        transition-duration: 0.3s;
+        background-color: white;
+        color:rgb(19, 19, 119);
+        cursor: pointer;
+    }
+    
 
 }
 
